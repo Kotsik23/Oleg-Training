@@ -1,0 +1,43 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 30px;
+}
+
+.navbar__heading {
+	font-family: inherit;
+	color: var(--secondary-color);
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 26px;
+	margin: 0;
+}
+
+.navbar__links {
+	cursor: pointer;
+	color: var(--secondary-color);
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.navbar__links li {
+	font-family: inherit;
+	font-weight: bolder;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.navbar__links li:first-of-type {
+	position: relative;
+	color: var(--primary-color);
+}
+
+.navbar__links li:first-of-type > svg {
+	position: absolute;
+	top: -15px;
+	left: 30%;
+	color: var(--secondary-color);
+}
