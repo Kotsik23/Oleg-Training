@@ -1,0 +1,25 @@
+.feature__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 27px;
+	max-width: 300px;
+	color: var(--secondary-color);
+}
+
+.feature__item h4 {
+	margin: 0;
+	font-family: inherit;
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;
+}
+
+.feature__item p {
+	text-align: center;
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+}

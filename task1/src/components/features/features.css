@@ -1,0 +1,33 @@
+.features {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.features__heading {
+	font-family: inherit;
+	color: var(--secondary-color);
+	font-size: 32px;
+	line-height: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin: 41px 0;
+}
+
+.features__heading span {
+	font-weight: 300;
+	font-size: 24px;
+}
+
+.features__container {
+	width: 100%;
+	background-color: #f6f6f6;
+}
+
+.features__container_content {
+	padding: 60px 0;
+	display: flex;
+	align-items: center;
+	gap: 90px;
+}
