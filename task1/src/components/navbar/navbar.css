@@ -21,6 +21,7 @@
 	display: flex;
 	align-items: center;
 	gap: 50px;
+	margin: 0;
 }
 
 .navbar__links li {
