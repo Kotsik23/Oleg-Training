@@ -6,6 +6,7 @@ const FeatureItem = ({ image, title, text }) => {
          <img alt={title} src={image} />
          <h4>{title}</h4>
          <p>{text}</p>
+         <button>More</button>
       </div>
    )
 }
