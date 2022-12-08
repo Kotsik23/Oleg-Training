@@ -1,0 +1,23 @@
+.contacts__twitter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px 24px;
+	background-color: var(--secondary-dark-color);
+	border-radius: 8px;
+	color: #ffffff;
+	width: 50%;
+	gap: 30px;
+}
+
+.contacts__twitter_content {
+	color: #b5c7c9;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+}
+
+.contacts__twitter_content span {
+	color: #ffffff;
+	text-decoration: underline;
+}
