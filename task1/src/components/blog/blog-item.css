@@ -1,0 +1,33 @@
+.blog__item {
+	display: grid;
+	grid-template-columns: 3fr 9fr;
+	align-items: center;
+	justify-items: center;
+}
+
+.blog__item_content p > span {
+	color: var(--primary-color);
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.blog__item_content p > span:hover {
+	text-decoration: underline;
+}
+
+.blog__item_content h4 {
+	margin: 0;
+	font-size: 22px;
+	font-weight: bold;
+	color: var(--secondary-color);
+	margin-bottom: 10px;
+}
+
+.blog__item_content p {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--secondary-color);
+	margin: 0;
+}

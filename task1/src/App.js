@@ -1,3 +1,4 @@
+import Blog from "./components/blog/Blog"
 import Features from "./components/features/Features"
 import Hero from "./components/hero/Hero"
 import Navbar from "./components/navbar/Navbar"
@@ -7,9 +8,12 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Features />
-      <Portfolio />
+      <main>
+        <Hero />
+        <Features />
+        <Portfolio />
+        <Blog />
+      </main>
     </>
   )
 }
