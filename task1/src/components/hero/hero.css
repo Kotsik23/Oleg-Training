@@ -11,7 +11,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: url("../../assets/wallpaperwide.png") no-repeat;
+	background: url("/public/assets/wallpaperwide.png") no-repeat;
+	background-size: cover;
 	color: #ffffff;
 }
 
@@ -39,4 +40,12 @@
 .hero__content img {
 	margin-top: 41px;
 	cursor: pointer;
+}
+
+.home {
+	visibility: hidden;
+	position: absolute;
+	top: -92px;
+	left: 0;
+	right: 0;
 }

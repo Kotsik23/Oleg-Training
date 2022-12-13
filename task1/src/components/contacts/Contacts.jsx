@@ -4,7 +4,7 @@ import Twitter from "./Twitter"
 
 const Contacts = () => {
    return (
-      <div className="contacts">
+      <section className="contacts" id="contacts">
          <div className="container">
             <h2 className="contacts__heading">Cras ornare tristique elit<br />
                <span>Donec odio uisque volutpat mattis eros ullam malesuada ut turpis</span>
@@ -15,7 +15,7 @@ const Contacts = () => {
                <Twitter />
             </div>
          </div>
-      </div>
+      </section>
    )
 }
 

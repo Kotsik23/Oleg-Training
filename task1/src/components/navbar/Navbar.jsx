@@ -1,32 +1,24 @@
 import { FiChevronDown } from "react-icons/fi"
+import { useScrollPosition } from "../../hooks/useScrollPosition"
+import { NavbarItems } from "./navbar.constants"
 import "./navbar.css"
 
 const Navbar = () => {
-   return (
-      <nav className="container navbar">
-         <h2 className="navbar__heading">Site Name</h2>
+   const scrollPosition = useScrollPosition();
 
-         <ul className="navbar__links">
-            <li>
-               <FiChevronDown />
-               <a>Home</a>
-            </li>
-            <li>
-               <a>About</a>
-            </li>
-            <li>
-               <a>Service</a>
-            </li>
-            <li>
-               <a>Project</a>
-            </li>
-            <li>
-               <a>Block</a>
-            </li>
-            <li>
-               <a>Contact</a>
-            </li>
-         </ul>
+   return (
+      <nav className={`navbar ${scrollPosition > 900 ? "active" : ""}`} id="navbar">
+         <div className="navbar__container container">
+            <h2 className="navbar__heading">Site Name</h2>
+
+            <ul className="navbar__links">
+               {NavbarItems.map(item => (
+                  <li key={item.id} >
+                     <a href={item.href}>{item.name}</a>
+                  </li>
+               ))}
+            </ul>
+         </div>
       </nav>
    )
 }

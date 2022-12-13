@@ -1,15 +1,19 @@
 import "./hero.css"
-import ArrowCircle from "../../assets/arrow.png"
+import { IMAGES } from "../../utils/image.constants"
 
 const Hero = () => {
    return (
-      <div className="hero">
+      <section className="hero" id="hero">
          <div className="hero__content">
             <h2>Lorem ipsum laro <br /> dolore sit amet vivamus</h2>
             <p>Lorem ipsum laro sit amet <br /> dolore sit ame</p>
-            <img alt="arrow-circle" src={ArrowCircle} width={60} height={60} />
+            <a href="#features">
+               <img alt="arrow-circle" src={IMAGES.ARROW_CIRCLE} width={60} height={60} />
+            </a>
          </div>
-      </div>
+
+         <div className="home" id="home" />
+      </section>
    )
 }
 

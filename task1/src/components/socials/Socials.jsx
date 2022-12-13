@@ -4,11 +4,11 @@ import SocialItem from "./SocialItem"
 
 const Socials = () => {
    return (
-      <div className="socials container">
+      <section className="socials container" id="socials">
          {SocialItems.map(item => (
             <SocialItem key={item.id} icon={item.icon} title={item.title} subtitle={item.subtitle} href={item.href} />
          ))}
-      </div>
+      </section>
    )
 }
 

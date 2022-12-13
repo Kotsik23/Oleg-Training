@@ -1,11 +1,11 @@
-import Blog from "./components/blog/Blog"
-import Contacts from "./components/contacts/Contacts"
-import Features from "./components/features/Features"
+import Blog from "./components/Blog/Blog"
+import Contacts from "./components/Contacts/Contacts"
+import Features from "./components/Features/Features"
 import Footer from "./components/Footer/Footer"
-import Hero from "./components/hero/Hero"
-import Navbar from "./components/navbar/Navbar"
-import Portfolio from "./components/portfolio/Portfolio"
-import Socials from "./components/socials/Socials"
+import Hero from "./components/Hero/Hero"
+import Navbar from "./components/Navbar/Navbar"
+import Portfolio from "./components/Portfolio/Portfolio"
+import Socials from "./components/Socials/Socials"
 
 const App = () => {
   return (
