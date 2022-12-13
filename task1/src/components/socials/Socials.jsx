@@ -6,7 +6,7 @@ const Socials = () => {
    return (
       <div className="socials container">
          {SocialItems.map(item => (
-            <SocialItem key={item.id} icon={item.icon} title={item.title} subtitle={item.subtitle} />
+            <SocialItem key={item.id} icon={item.icon} title={item.title} subtitle={item.subtitle} href={item.href} />
          ))}
       </div>
    )
