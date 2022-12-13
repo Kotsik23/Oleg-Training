@@ -1,0 +1,25 @@
+.socials__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.socials__item_content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.socials__item_content h5 {
+	margin: 0;
+	font-size: 18px;
+	color: var(--secondary-color);
+}
+
+.socials__item_content p {
+	font-size: 14px;
+	color: #b5c7c9;
+	margin: 0;
+}
