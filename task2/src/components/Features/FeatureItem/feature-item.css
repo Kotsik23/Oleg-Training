@@ -1,0 +1,14 @@
+.feature__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 47px 0;
+}
+
+.feature__item[data-bg="blue"] {
+	background-color: #e2f8ff;
+}
+
+.feature__item[data-bg="green"] {
+	background-color: #f5f9eb;
+}

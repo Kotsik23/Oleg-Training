@@ -1,0 +1,5 @@
+.features {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: calc(100vh - 60vh - 77px);
+}

@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 570px;
+	height: 60vh;
 	background-image: url("/public/assets/hero.png");
 	background-size: cover;
 }
