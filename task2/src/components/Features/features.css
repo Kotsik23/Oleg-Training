@@ -3,6 +3,7 @@
 	display: flex;
 	align-items: center;
 	background: linear-gradient(to right, #e2f8ff 0%, #e2f8ff 50%, #f5f9eb 50%, #f5f9eb 100%);
+	min-height: 400px;
 }
 
 .features__container {
