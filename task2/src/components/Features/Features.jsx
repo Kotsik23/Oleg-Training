@@ -9,10 +9,13 @@ const FEATURES_IMAGES = {
 const Features = () => {
    return (
       <section className="features">
-         <FeatureItem icon={FEATURES_IMAGES.COACH_IMAGE} title={"Find Properties"} content={"Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here."} buttonText={"Become A Member"} variant={"blue"} />
+         <div className="container">
+            <div className="features__container">
+               <FeatureItem icon={FEATURES_IMAGES.COACH_IMAGE} title={"Find Properties"} content={"Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here."} buttonText={"Become A Member"} variant={"blue"} />
 
-         <FeatureItem icon={FEATURES_IMAGES.WALLET_IMAGE} title={"Find Byers"} content={"Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here."} buttonText={"Submit Your Project"} variant={"green"} />
-
+               <FeatureItem icon={FEATURES_IMAGES.WALLET_IMAGE} title={"Find Byers"} content={"Sign up to browse the portfolio. Your journey to becoming a real estate baron starts here."} buttonText={"Submit Your Project"} variant={"green"} />
+            </div>
+         </div>
       </section>
    )
 }

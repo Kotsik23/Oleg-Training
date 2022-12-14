@@ -1,5 +1,10 @@
 .features {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	height: calc(100vh - 60vh - 77px);
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to right, #e2f8ff 0%, #e2f8ff 50%, #f5f9eb 50%, #f5f9eb 100%);
+}
+
+.features__container {
+	display: flex;
 }
