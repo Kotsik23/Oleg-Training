@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>My Clock</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="clock__wrapper">
+				<h2>My Time</h2>
+				<div class="clock">
+					<svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+						<circle class="ring ring__seconds" r="145" pathlength="60" />
+						<circle class="ring ring__hours" r="145" pathlength="12" />
+						<line class="hand hand__minute" x1="0" y1="0" x2="0" y2="-110" />
+						<line class="hand hand__hour" x1="0" y1="0" x2="0" y2="-60" />
+						<circle class="ring ring__center" r="3" />
+						<line class="hand hand__second" x1="0" y1="12" x2="0" y2="-130" />
+					</svg>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="./script.js"></script>
+</html>
