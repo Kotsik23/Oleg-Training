@@ -13,6 +13,27 @@ class Username {
 };
 
 const ModuleLib = (function () {
+
+   function memoize(func) {
+      const memo = {};
+      const slice = Array.prototype.slice;
+
+
+      return function () {
+         const args = slice.call(arguments);
+
+         if (args in memo) {
+            console.log("Get result from cache")
+            return memo[args];
+         }
+         else {
+            console.log("Calculating result")
+            return (memo[args] = func.apply(this, args));
+         }
+
+      }
+   }
+
    return {
       isArray: function (obj) {
          return Array.isArray(obj)
@@ -84,6 +105,10 @@ const ModuleLib = (function () {
                return instance;
             },
          };
-      }
+      },
+
+      memoizedSum: memoize(function (a, b) {
+         return a + b
+      })
    }
 })()

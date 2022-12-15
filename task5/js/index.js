@@ -37,3 +37,11 @@ console.log("Instance 1:", instance1)
 
 const instance2 = singleton.getInstance()
 console.log("Is instances equals? ", instance1 === instance2)
+
+console.log(ModuleLib.memoizedSum(2, 5))
+console.log(ModuleLib.memoizedSum(2, 5))
+
+console.log(ModuleLib.memoizedSum(5, 2))
+
+console.log(ModuleLib.memoizedSum(11, 6))
+console.log(ModuleLib.memoizedSum(11, 6))
