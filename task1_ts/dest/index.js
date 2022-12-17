@@ -7,25 +7,19 @@ var Category;
 })(Category || (Category = {}));
 class Product {
     constructor(price, category, title) {
-        this._id = Product.generateProductId();
-        this._price = price;
-        this._category = category;
-        this._title = title;
+        this.price = price;
+        this.category = category;
+        this.title = title;
+        this.idProduct = Product.generateProductId();
+        this.price = price;
+        this.category = category;
+        this.title = title;
     }
     static generateProductId() {
-        return Math.floor(Math.random() * 100);
+        return Math.floor(Math.random() * Number.MAX_SAFE_INTEGER);
     }
     get id() {
-        return this._id;
-    }
-    get title() {
-        return this._title;
-    }
-    get category() {
-        return this._category;
-    }
-    get price() {
-        return this._price;
+        return this.idProduct;
     }
 }
 class User {
@@ -61,6 +55,7 @@ class User {
         const removeIndex = this.basket.findIndex(item => item.id === id);
         if (removeIndex === -1) {
             console.log(`Product by id ${id} doesn't found`);
+            return;
         }
         this.basket.splice(removeIndex, 1);
     }
@@ -84,6 +79,7 @@ user.addToBasket([galaxyNote, macBookPro, galaxyWatch]);
 user.addToBasket([lenovo, galaxyNote, appleWatch]);
 console.log(user.calculateTotalPrice());
 user.removeProduct(user.getMostExpensiveProduct().id);
+user.removeProduct(300);
 console.log(user.calculateTotalPrice());
 console.log(user.getProductsByCategory(Category.phones));
 console.log(user.getMostInexpensiveProduct().title);

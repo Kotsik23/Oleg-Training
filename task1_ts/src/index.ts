@@ -5,36 +5,21 @@ enum Category {
 }
 
 class Product {
-	private _id: number
-	private _price: number
-	private _category: Category
-	private _title: string
+	private idProduct: number
 
-	constructor(price: number, category: Category, title: string) {
-		this._id = Product.generateProductId()
-		this._price = price
-		this._category = category
-		this._title = title
+	constructor(readonly price: number, readonly category: Category, readonly title: string) {
+		this.idProduct = Product.generateProductId()
+		this.price = price
+		this.category = category
+		this.title = title
 	}
 
 	private static generateProductId(): number {
-		return Math.floor(Math.random() * 100)
+		return Math.floor(Math.random() * Number.MAX_SAFE_INTEGER)
 	}
 
 	get id(): number {
-		return this._id
-	}
-
-	get title(): string {
-		return this._title
-	}
-
-	get category(): Category {
-		return this._category
-	}
-
-	get price(): number {
-		return this._price
+		return this.idProduct
 	}
 }
 
@@ -74,6 +59,7 @@ class User {
 
 		if (removeIndex === -1) {
 			console.log(`Product by id ${id} doesn't found`)
+			return
 		}
 
 		this.basket.splice(removeIndex, 1)
@@ -105,6 +91,7 @@ user.addToBasket([lenovo, galaxyNote, appleWatch])
 console.log(user.calculateTotalPrice())
 
 user.removeProduct(user.getMostExpensiveProduct().id)
+user.removeProduct(300)
 
 console.log(user.calculateTotalPrice())
 
